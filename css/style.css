@@ -140,6 +140,12 @@ body {
   font-family: "微软雅黑", Verdana, Arial, Helvetica, sans-serif;
   font-size: 16px;
   letter-spacing: 2px;
+  background: url("/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   background-color: #c8e6de;
   color: #171715;
   -webkit-overflow-scrolling: touch;
@@ -2128,5 +2134,4 @@ form input.st-search-input_my {
   -webkit-box-shadow: inset 0 1px 3px 0 #e4eba7;
   box-shadow: inset 0 1px 3px 0 #e4eba7;
   outline: none;
-  background: #666 url("/img/search.png") no-repeat 7px 7px;
 }
