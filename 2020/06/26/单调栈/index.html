@@ -9,15 +9,15 @@
   
 
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="单调栈与单调队列很相似。首先栈是后进先出的，单调性指的是严格的递增或者递减。 单调栈有以下两个性质： 1、若是单调递增栈，则从栈顶到栈底的元素是严格递增的。若是单调递减栈，则从栈顶到栈底的元素是严格递减的。 2、越靠近栈顶的元素越后进栈。 单调栈与单调队列不同的地方在于栈只能在栈顶操作，因此一般在应用单调栈的地方不限定它的大小，否则会造成元素无法进栈。 元素进栈过程：对于单调递增栈，若当前进栈元素">
+  <meta name="description" content="单调栈与单调队列很相似。首先栈是后进先出的，单调性指的是严格的递增或者递减。 单调栈有以下两个性质： 1、若是单调递增栈，则从栈顶到栈底的元素是严格递增的。若是单调递减栈，则从栈顶到栈底的元素是严格递减的。 2、越靠近栈顶的元素越后进栈。 单调栈与单调队列不同的地方在于栈只能在栈顶操作，因此一般在应用单调栈的地方不限定它的大小，否则会造成元素无法进栈。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="单调栈">
 <meta property="og:url" content="http://example.com/2020/06/26/%E5%8D%95%E8%B0%83%E6%A0%88/index.html">
 <meta property="og:site_name" content="Jelly">
-<meta property="og:description" content="单调栈与单调队列很相似。首先栈是后进先出的，单调性指的是严格的递增或者递减。 单调栈有以下两个性质： 1、若是单调递增栈，则从栈顶到栈底的元素是严格递增的。若是单调递减栈，则从栈顶到栈底的元素是严格递减的。 2、越靠近栈顶的元素越后进栈。 单调栈与单调队列不同的地方在于栈只能在栈顶操作，因此一般在应用单调栈的地方不限定它的大小，否则会造成元素无法进栈。 元素进栈过程：对于单调递增栈，若当前进栈元素">
+<meta property="og:description" content="单调栈与单调队列很相似。首先栈是后进先出的，单调性指的是严格的递增或者递减。 单调栈有以下两个性质： 1、若是单调递增栈，则从栈顶到栈底的元素是严格递增的。若是单调递减栈，则从栈顶到栈底的元素是严格递减的。 2、越靠近栈顶的元素越后进栈。 单调栈与单调队列不同的地方在于栈只能在栈顶操作，因此一般在应用单调栈的地方不限定它的大小，否则会造成元素无法进栈。">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-06-25T17:22:40.000Z">
-<meta property="article:modified_time" content="2020-06-26T06:02:46.000Z">
+<meta property="article:modified_time" content="2021-07-30T03:23:55.920Z">
 <meta property="article:author" content="preccrep">
 <meta property="article:tag" content="算法">
 <meta name="twitter:card" content="summary">
@@ -224,6 +224,7 @@
 <p>1、若是单调递增栈，则从栈顶到栈底的元素是严格递增的。若是单调递减栈，则从栈顶到栈底的元素是严格递减的。</p>
 <p>2、越靠近栈顶的元素越后进栈。</p>
 <p>单调栈与单调队列不同的地方在于栈只能在栈顶操作，因此一般在应用单调栈的地方不限定它的大小，否则会造成元素无法进栈。</p>
+<span id="more"></span>
 <p>元素进栈过程：对于单调递增栈，若当前进栈元素为e，从栈顶开始遍历元素，把小于e或者等于e的元素弹出栈，直接遇到一个大于e的元素或者栈为空为止，然后再把e压入栈中。对于单调递减栈，则每次弹出的是大于e或者等于e的元素。</p>
 <p>一个单调递增栈的例子：</p>
 <p>进栈元素分别为3，4，2，6，4，5，2，3</p>
