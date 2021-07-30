@@ -155,7 +155,7 @@ h1,
 h2,
 h3 {
   display: block;
-  margin-right: 100px;
+  margin-right: 150px;
 }
 h1 {
   font-size: 1.5em;
@@ -1220,11 +1220,15 @@ a {
   width: 100%;
   margin: 0 0 20px 0;
   border-collapse: collapse;
-  border-spacing: 0;
+  max-width: 100%;
+  overflow: scroll;
+  table-layout: fixed;
+  word-break: break-all;
+  word-wrap: break-word;
 }
 .article-entry table tr,
 .article-entry table td {
-  height: 35px;
+  height: 30px;
 }
 .article-entry table thead tr {
   background: #999c92;

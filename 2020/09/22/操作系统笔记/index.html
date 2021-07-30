@@ -17,7 +17,7 @@
 <meta property="og:description" content="计算机的启动（boot）过程第一阶段：BIOS（Basic Input &#x2F; Output System） 硬件自检（Power-On Self-Test，缩写为POST）：首先检查计算机硬件能否满足运行的基本条件 启动顺序（Boot Sequence）：硬件自检完成后，BIOS将控制权转交给下一阶段的启动程序。这时，BIOS需要知道“下一阶段的启动程序“具体在哪一个设备。BIOS需要一个外部存储设">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2020-09-22T13:51:05.000Z">
-<meta property="article:modified_time" content="2021-07-30T03:22:12.342Z">
+<meta property="article:modified_time" content="2021-07-30T03:25:14.978Z">
 <meta property="article:author" content="preccrep">
 <meta property="article:tag" content="操作系统">
 <meta name="twitter:card" content="summary">
@@ -222,6 +222,7 @@
         <h1 id="计算机的启动（boot）过程"><a href="#计算机的启动（boot）过程" class="headerlink" title="计算机的启动（boot）过程"></a>计算机的启动（boot）过程</h1><p><code>第一阶段：BIOS（Basic Input / Output System）</code></p>
 <p><em>硬件自检</em>（Power-On Self-Test，缩写为POST）：首先检查计算机硬件能否满足运行的基本条件</p>
 <p><em>启动顺序</em>（Boot Sequence）：硬件自检完成后，BIOS将控制权转交给下一阶段的启动程序。这时，BIOS需要知道“下一阶段的启动程序“具体在哪一个设备。BIOS需要一个外部存储设备的排序，排在前面的设备就是优先转交控制权的设备</p>
+<span id="more"></span>
 <p><code>第二阶段：主引导记录</code></p>
 <p>BIOS按照用户指定的引导顺序，从硬盘、软盘或可移动设备中读取启动设备的MBR（Master Root Record，主引导记录）并放入指定位置（0x7c000）的内存中。</p>
 <p>计算机读取该设备的第一个扇区，也就是读取最前面的 512 个字节。它的主要作用是告诉计算机<em>到硬盘的哪一个位置去找操作系统</em>。</p>
@@ -410,7 +411,9 @@ MathJax.Hub.Queue(function() {
 });
 </script>
 
-<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+<!-- <script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script> -->
+<!-- <script src="//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script> -->
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js"></script>
 
 
   </div>
